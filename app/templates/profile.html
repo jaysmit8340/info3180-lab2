@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+    <div class="profile">
+        <div class="profilehead">
+            <img class ="photo" src="{{url_for('static', filename='jason.jpg')}}" alt="profile photo">
+                <h1>Jason Smith</h1>
+                <h2>@jaysmit</h2>
+                <h2>Kingston, Jamaica</h2>
+                <h2>{{date_joined}}</h2>
+        </div>
+        <div class="profilebod">
+            <p>
+                A young and Talented individual who's passion for Web Developing and User interface Designing and is purpose driven and believes to achieve the best in life.
+            </p>
+            <ul>
+                <li>
+                    <span class="number">7</span>
+                    <span>Posts</span>
+                </li>
+                <li>
+                    <span class="number">100</span>
+                    <span>Following</span>
+                </li>
+                <li>
+                    <span class="number">250</span>
+                    <span>Followers</span>
+                </li>
+            </ul>
+            <button class="btn">Follow</button>
+        </div>
+    </div>
+ 
+{% endblock %}
